@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ParseJSON.h"
+#import "TMTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    NSURL *urlLink = [[NSURL alloc] initWithString:@"https://dl.dropboxusercontent.com/s/f3x990vmoxp5gis/test.json"];
+    NSDictionary *json = [ParseJSON convertJSONData:[ParseJSON downloadJSONfromURL:urlLink]];
+    
+    TMTableViewController *view = [[TMTableViewController alloc] initWithInfo:json];
+    UINavigationController *navigate = [[UINavigationController alloc] initWithRootViewController:view];
+    
+    view.title = @"JSON Reciever";
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window makeKeyAndVisible];
+    
+    self.window.rootViewController = navigate;
+    
     return YES;
 }
 

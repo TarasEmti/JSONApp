@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TMTableViewController.h
 //  JSONapp
 //
 //  Created by Тарас on 23.11.16.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TMTableViewController : UITableViewController
 
+- (id) initWithInfo:(NSDictionary*) info;
 
 @end
-

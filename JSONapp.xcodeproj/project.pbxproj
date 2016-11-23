@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		768A6C051DE598C6009E01D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 768A6C041DE598C6009E01D2 /* main.m */; };
 		768A6C081DE598C6009E01D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 768A6C071DE598C6009E01D2 /* AppDelegate.m */; };
-		768A6C0B1DE598C6009E01D2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 768A6C0A1DE598C6009E01D2 /* ViewController.m */; };
 		768A6C0E1DE598C6009E01D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768A6C0C1DE598C6009E01D2 /* Main.storyboard */; };
 		768A6C101DE598C6009E01D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 768A6C0F1DE598C6009E01D2 /* Assets.xcassets */; };
 		768A6C131DE598C6009E01D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768A6C111DE598C6009E01D2 /* LaunchScreen.storyboard */; };
+		768A6C1C1DE5993B009E01D2 /* TMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 768A6C1B1DE5993B009E01D2 /* TMTableViewController.m */; };
+		768A6C1F1DE59A47009E01D2 /* ParseJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 768A6C1E1DE59A47009E01D2 /* ParseJSON.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +21,14 @@
 		768A6C041DE598C6009E01D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		768A6C061DE598C6009E01D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		768A6C071DE598C6009E01D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		768A6C091DE598C6009E01D2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		768A6C0A1DE598C6009E01D2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		768A6C0D1DE598C6009E01D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		768A6C0F1DE598C6009E01D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		768A6C121DE598C6009E01D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		768A6C141DE598C6009E01D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		768A6C1A1DE5993B009E01D2 /* TMTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TMTableViewController.h; path = ../TMTableViewController.h; sourceTree = "<group>"; };
+		768A6C1B1DE5993B009E01D2 /* TMTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TMTableViewController.m; path = ../TMTableViewController.m; sourceTree = "<group>"; };
+		768A6C1D1DE59A47009E01D2 /* ParseJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParseJSON.h; path = ../ParseJSON.h; sourceTree = "<group>"; };
+		768A6C1E1DE59A47009E01D2 /* ParseJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParseJSON.m; path = ../ParseJSON.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +61,12 @@
 		768A6C021DE598C6009E01D2 /* JSONapp */ = {
 			isa = PBXGroup;
 			children = (
+				768A6C1A1DE5993B009E01D2 /* TMTableViewController.h */,
+				768A6C1B1DE5993B009E01D2 /* TMTableViewController.m */,
+				768A6C1D1DE59A47009E01D2 /* ParseJSON.h */,
+				768A6C1E1DE59A47009E01D2 /* ParseJSON.m */,
 				768A6C061DE598C6009E01D2 /* AppDelegate.h */,
 				768A6C071DE598C6009E01D2 /* AppDelegate.m */,
-				768A6C091DE598C6009E01D2 /* ViewController.h */,
-				768A6C0A1DE598C6009E01D2 /* ViewController.m */,
 				768A6C0C1DE598C6009E01D2 /* Main.storyboard */,
 				768A6C0F1DE598C6009E01D2 /* Assets.xcassets */,
 				768A6C111DE598C6009E01D2 /* LaunchScreen.storyboard */,
@@ -151,9 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				768A6C0B1DE598C6009E01D2 /* ViewController.m in Sources */,
 				768A6C081DE598C6009E01D2 /* AppDelegate.m in Sources */,
+				768A6C1C1DE5993B009E01D2 /* TMTableViewController.m in Sources */,
 				768A6C051DE598C6009E01D2 /* main.m in Sources */,
+				768A6C1F1DE59A47009E01D2 /* ParseJSON.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
