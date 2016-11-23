@@ -25,8 +25,6 @@
     
     NSDictionary *parseDict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
     
-    NSLog(@"%@", parseDict);
-    
     return parseDict;
 }
 
